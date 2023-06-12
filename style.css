@@ -1,0 +1,100 @@
+:root {
+  --blue: #4285f4;
+  --light-gray: #f5f5f5;
+  --pink: #ff4081;
+  --dark-gray: #333333;
+}
+
+* {
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+header {
+  padding: 1rem 5rem;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--dark-gray);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-container {
+  background-color: var(--blue);
+  min-height: 10rem;
+  width: 30rem;
+  padding: 2rem;
+  color: var(--light-gray);
+  margin: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+#quote {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#author {
+  text-align: right;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-bookmark,
+#generate {
+  cursor: pointer;
+}
+
+#generate {
+  padding: 10px 20px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: var(--pink);
+  color: var(--light-gray);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#generate:hover {
+  background-color: var(--dark-gray);
+}
+
+#generate:active {
+  background-color: var(--dark-gray);
+}
+
+.bookmark {
+  display: flex;
+  flex-direction: column;
+}
+.bookmark a {
+  text-decoration: underline;
+  font-size: 12px;
+  margin: 1px;
+  color: var(--light-gray);
+}
